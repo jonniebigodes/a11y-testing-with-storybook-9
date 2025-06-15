@@ -43,5 +43,5 @@ const theme = create({
 addons.setConfig({
   theme,
   showPanel: true, // show addons panel by default
-  panelPosition: 'right', // position addons panel on the right by default
+  panelPosition: 'bottom', // position addons panel on the bottom by default
 })
