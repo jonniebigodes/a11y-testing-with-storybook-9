@@ -8,11 +8,14 @@ const config: StorybookConfig = {
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: [
-    '@storybook/addon-essentials',
-    '@storybook/experimental-addon-test',
+    '@storybook/addon-vitest',
     '@chromatic-com/storybook',
     '@storybook/addon-a11y',
+    '@storybook/addon-docs',
   ],
+  core: {
+    disableWhatsNewNotifications: true,
+  },
   typescript: {
     reactDocgen: 'react-docgen',
   },
